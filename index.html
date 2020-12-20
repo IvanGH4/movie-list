@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Movies</title>
+</head>
+<body>
+    <header>
+        <h1>Movie App</h1>
+        <form id="form">
+            <button class="homeBtn" onclick="getMovies(API_URl)">Home</button>
+            <input type="text" id="search" class="search" placeholder="Search" />
+        </form>
+    </header>
+
+    <main id="main"></main>
+    <div class="more-btn">
+        <button class="moreMovies prev" onclick="fetchBack()"><i class="fas fa-arrow-left"></i></button>
+        <button class="moreMovies" onclick="fetchMoreMovies()"><i class="fas fa-arrow-right"></i></button>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
